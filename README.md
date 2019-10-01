@@ -11,6 +11,6 @@
 For Example:
 
 ### Hello World Trello assignment:
-- On master branch of forked repo, create new branch named after task
+- On master branch of forked repo, create new branch named "Hello World"
 - Inside your personal directory create a folder called "Hello World"
 - Implement all code changes pertaining to the Hello World assignment inside the "Hello World" folder you created.
