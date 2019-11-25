@@ -4,14 +4,8 @@
 # wordCount(["c", "b", "a"]) → {"a": 1, "b": 1, "c": 1}
 # wordCount(["c", "c", "c", "c"]) → {"c": 4}
 
-some_array = ["a", "quick", "brown", "fox"]
-another_one = ["a", "a", "s", "s", "d", "d", "f", "f"]
-third_array = ["becca", "becca", "becca", "becca", "becca", "becca"]
-
-def search_array (some_array)
-    some_array.group_by(&:itself).transform_values(&:count)
+class String_Count
+    def search_array (some_array)
+        some_array.group_by(&:itself).transform_values(&:count)
+    end
 end
-
-puts search_array(some_array)
-puts search_array(another_one)
-puts search_array(third_array)
