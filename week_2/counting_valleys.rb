@@ -28,20 +28,18 @@
 
 # EX: countingValleys(12, DDUUDDUDUUUD) -> 2
 
-path = "DDUUDDUDUUUD"
-total_steps = path.length
 
-def counting_valleys(total_steps, path)
-    elevation = 0
-    valley_count = 0
-    
-    path.each_char do |step|
-        elevation += step == "U" ? 1 : -1
-        if step == "U" && elevation == 0
-            valley_count += 1
-        end 
+class Peaks_Valleys
+    def counting_valleys(path)
+        elevation = 0
+        valley_count = 0
+        
+        path.each_char do |step|
+            elevation += step == "U" ? 1 : -1
+            if step == "U" && elevation == 0
+                valley_count += 1
+            end 
+        end
+        return valley_count
     end
-    return valley_count
 end
-
-puts counting_valleys(total_steps, path)
