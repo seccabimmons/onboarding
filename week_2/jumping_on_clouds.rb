@@ -18,22 +18,19 @@
 # Input will be a string of integers, ex: "0010010"
 
 # jumpingOnClouds("0010010") -> 4
-
-def jumping_on_clouds (cloud_array)
-    jumps = 0
-    
-    i = 0
-    while i < cloud_array.length-1
-        if cloud_array[i+2] == 0
-            i += 2
-        else 
-            i += 1
-        end
-        jumps += 1
-   end
-   return jumps
+class Cloud_Jumping
+    def jumping_on_clouds (cloud_array)
+        jumps = 0  
+        i = 0
+        while i < cloud_array.length-1
+            if cloud_array[i+2] == 0
+                i += 2
+            else 
+                i += 1
+            end
+            jumps += 1
+    end
+    return jumps
+    end
 end
         
-cloud_array = [0, 0, 1, 0, 0, 1, 0]
-
-p jumping_on_clouds(cloud_array)
