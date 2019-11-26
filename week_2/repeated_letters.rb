@@ -16,9 +16,11 @@
 # s: a string to repeat
 # n: the number of characters to consider
 
-def repeated_string(s, n)
-    (s.count('a') * (n / s.length)) + (s[0...(n % s.length)].count('a'))
+class Counting_A
+    def repeated_string(s, n)
+        (s.count('a') * (n / s.length)) + (s[0...(n % s.length)].count('a'))
+    end
 end
 
-p repeated_string("aba", 10)
-p repeated_string("a", 100000000000)
+# p repeated_string("aba", 10)
+# p repeated_string("a", 100000000000)
